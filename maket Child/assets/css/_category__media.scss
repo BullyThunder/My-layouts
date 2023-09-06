@@ -1,0 +1,247 @@
+.category{
+    &__slick{
+        &__block{
+            @include media ('426px'){
+                max-height: 300px;
+             }
+             @include media ('426px'){
+                max-height: 320px;
+             }
+             @include media ('358px'){
+                max-height: 260px;
+             }
+        }
+        &__text{
+            @include media ('426px'){
+                @include font-Montserrat-600-16;
+             }
+        }
+        &__block__slide img{
+            
+        }
+        &__text{
+            @include media ('1441px'){
+               justify-content: start;
+            }
+            @include media ('426px'){
+                justify-content: center;
+             }
+        }
+    }
+    &__content{
+        &__bottom{
+            &__title{
+                a{
+                    color:  #1D1D1D;
+                }
+                @include media ('426px'){
+                    color:  #1D1D1D;
+                }
+            }
+            &__display{ @include media('426px'){
+                display: none;
+               }
+        }
+            &__extra{
+                @include media ('426px'){
+                    display: flex;
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+            }
+        }
+        &__left__media{
+            @include media ('426px'){
+                display: flex;
+            }
+        }
+        @include media ('1269px'){
+        &__left{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            @include media ('426px')
+            {
+                display: none;
+            }
+        }
+        &__right{
+            width: 100%;
+            &__top{
+                display: flex;
+                align-items: center;
+            }
+            &__title{
+                h2{
+                    display: none;
+                }
+                span{
+                    display: flex;
+                }
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+            &__text{
+                text-align: center;
+            }
+        }
+    }
+        @include media ('1268px'){
+            flex-direction: column;
+            row-gap: 20px;
+         }
+         &__bottom{
+            @include media ('426px'){
+            &__title{
+                font-size: 20px;
+                line-height: 20px;
+            }
+            &__catalog{
+                @include media (426px){
+                    font-size: 14px;
+                    line-height: 14px;
+                }
+            }
+        }
+         &__right{
+            @include media ('1268px'){
+                width: 100%;
+             }
+             @include media ('426px'){
+                row-gap: 20px;
+             }
+             &__title{
+                @include media ('426px'){
+                    font-size: 20px;
+                    line-height: 20px;
+                    display: flex;
+                    justify-content: center;
+                 }
+             }
+             &__text{
+                @include media ('426px'){
+                    text-align: center;
+                    font-size: 14px;
+                 }
+             }
+         }
+         &__left{
+            &__media{
+                @include media ('426px'){
+                    display: flex;
+                    width: 100%;
+                 }
+             }
+            @include media ('1268px'){
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                &__absolute{
+                    @include media ('426px'){
+                        display: none;
+                     }
+             }
+
+         }
+    }
+    &__content__right__top{
+        @include media ('1268px'){
+            display: none;
+         }
+    }
+    &__contents{
+    @include media ('1268px'){
+        display: flex;
+        flex-direction: row;
+        column-gap: 50px;
+        &__left{
+            display: flex;
+            width: 28%;
+            background-color: #00FFFF;
+            height: 100%;
+        }
+        &__right{
+            width: 72%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+            &__text{
+                display: flex;
+                @include font-Montserrat-400-16;
+                color:#565656;
+                max-width: 740px;
+
+            }
+            &__title{
+                display: flex;
+                @include font-Montserrat-600-30;
+            }
+            &__top{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 20px;
+                padding-bottom: 40px;
+            }
+        }
+        &__bottom{
+            display: flex;
+            justify-content: space-between;
+            &__catalog{
+                @include font-Montserrat-600-14;
+                display: flex;
+                align-items: start;
+                column-gap: 10px;
+                padding-top: 5px;
+                a span{
+                    @include font-Montserrat-600-14;
+                    color:#565656;
+                }
+                }
+            &__title{
+                @include font-Montserrat-600-30;
+                color:#1D1D1D;
+                &__padding{
+                    padding-bottom: 48px;
+                }
+            }
+            &__padding{
+                padding-top: 80px;
+            }
+        }
+    }
+}
+}    
+}
+&__slick__block__slide img{
+    @include media ('1200px'){
+        
+        max-height: 200px;
+       
+    }
+    @include media ('1408px'){
+        
+        max-width: 100%;
+        
+        
+    }
+    @include media ('769px'){
+        
+       
+        max-height: 150px;
+        
+        
+    }
+        }  
+        &__slick__block__slide_2{
+            @include media ('769px'){
+                display: none;
+            } 
+        } 
+        &__slick__block__slide_3{
+            @include media ('426px'){
+                display: none;
+            } 
+        } 
+}

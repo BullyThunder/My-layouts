@@ -1,0 +1,88 @@
+.header{
+    background-color: #1D1D1D;
+    @include font-Montserrat-600-14;
+    &__container{
+        @extend .container;
+    }
+    &__top{
+        display: flex;
+        justify-content: center;
+        color:#565656;
+        @include font-Montserrat-600-14;
+        &__padding{
+            padding-top: 18px;
+            padding-bottom: 20px;
+        }
+    }
+    &__content{
+        &__right{
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+        }
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        &__left{
+            display: flex;
+            column-gap: 32.67px;
+            @include font-Montserrat-700-20;
+            color:#FFFFFF;
+            &__extra{
+                display: flex;
+                column-gap: 10.67px;
+                align-items: center;
+                a{
+                    color:#FFFFFF;
+                }
+            }
+            &__text{
+                @include font-Montserrat-600-14;
+            }
+        }
+        &__middle{
+            display: flex;
+            
+            
+            &__block:hover{
+                background-color: #2B2B2B;
+            }
+            &__block{
+                a{
+                    color: #FFFFFF;
+                }
+                &__padding{
+                    padding-top: 29px;
+                    padding-left: 34px;
+                    padding-right: 34px;
+                    &__extra{
+                        padding-top: 16px;
+                        padding-right: 30px;
+                        padding-bottom: 16px;
+                        padding-left: 30px;
+                    }
+                    &__man{
+                        padding: 29px 15px 29px 30px;
+                    }
+                    &__child{
+                        padding: 29px 15px 29px 15px;
+                    }
+
+                }
+                &__sale{
+                    padding: 13px 27px 13px 27px;
+                    background-color: #ED1331;
+                    border-radius: 50px;
+                }
+                @include font-Montserrat-600-14;
+                
+            }
+           
+        }
+    }
+    &__burger-menu{
+        display: none;
+    }
+}

@@ -1,0 +1,217 @@
+.about{
+
+    &__container{
+        @extend .container;
+    }
+    &__padding{
+        padding-top: 60px;
+        padding-bottom: 41px;
+    }
+    &__centre{
+        display: flex;
+        justify-content: center;
+    }
+    &__title{
+        position: absolute;
+        bottom: 45px;
+        left: 40%;
+        @include font-Roboto-400-18;
+        color: #3D2220;
+        z-index: 20;
+    }
+    &__text{
+        position: relative;
+        &__span{
+            @include font-Roboto-300-14;
+                color:#FFDF9E;
+            display: flex;
+            flex-direction: column;
+            max-width: 979px;
+            &__start{
+                @include font-Roboto-400-14;
+                color:rgba(255, 223, 158, 1);
+            }
+            &__middle{
+                @include font-Roboto-300-14;
+                color:#FFDF9E;
+            }
+            &__padding{
+                padding-left: 33px;
+                padding-bottom: 23px;
+                padding-right: 30px;
+            }
+        } 
+        background-color: rgba(87, 82, 73, 0.98);
+        &__title{
+            @include font-Merriweather-400-18;
+            color:rgba(255, 223, 158, 1);
+            &__padding{
+                padding-top: 20.16px;
+                padding-left: 33px;
+                padding-bottom: 15.23px;
+            }
+        }
+    }
+    &__right__absolute{
+        position: absolute;
+        max-width: 267px;
+        max-height: 299px;
+        right: 0;
+        bottom:10px;
+    }
+    &__project{
+        &__block{
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            column-gap: 18px;
+        }
+        &__padding{
+            padding-top: 38.94px;
+            padding-bottom: 38.94px;
+        }
+
+        &__block_left{
+            @include font-Merriweather-400-18;
+            color: rgba(52, 100, 44, 1);
+        }
+        &__block_right{
+            display: flex;
+            align-items: center;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &__absolute{
+        max-width: 229px;
+        max-height: 373px;
+        position: absolute;
+        margin-top: 183px;
+    }
+    &__foto{
+        &__padding{
+            padding-bottom: 80px;
+        }
+        display: flex;
+        &_right{
+            position: relative;
+            top: 4px;
+            width: 50%;
+            max-width: 525px;
+        }
+        &_left{
+            position: relative;
+            width: 50%;
+            max-width: 519px;
+        }
+        
+        &_left_image{
+            max-width: 530px;
+            max-height: 608px;
+            position: relative;
+        }
+        &_right_image_1{
+            min-width: 525px;
+            max-height:259px;
+            z-index: 1;
+        }
+        &_right_image_2{
+            min-width: 525px;
+            max-height:338px;
+            z-index: 1;
+        }
+        &_left_text{
+            position: absolute;
+            bottom: 28px;
+            left: 3%;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 239, 227, 0.58);
+            color:rgba(61, 34, 32, 1);
+            @include font-Roboto-400-18;
+            padding-top: 20px;
+            padding-bottom: 14.39px;
+            width: 92%;
+            &_extra{
+                position: absolute;
+            bottom: 428px;
+            left: 3%;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 239, 227, 0.58);
+            color:rgba(61, 34, 32, 1);
+            @include font-Roboto-400-18;
+            padding-top: 20px;
+            padding-bottom: 14.39px;
+            width: 92%;
+            }
+        }
+
+    }
+    &__foto{
+        &__first{
+            position: relative;
+        }
+        &__span{
+            position: absolute;
+            bottom: 15%;
+            right: 0;
+            width: 90%;
+            height:10%;
+            @include font-Roboto-400-18;
+            background-color: rgba(255, 239, 227, 0.63);
+            
+        }
+    }
+    &__foto__wrapper{
+        background-color: rgba(255, 239, 227, 0.63);
+        background-size: cover;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        width: 100%;
+        height: 100vh;
+        z-index: 0;
+    }
+    &__foto__text{
+        
+        
+        @include font-Roboto-400-18;
+    }
+    &__foto_bg_1{
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: auto;
+        width: 91.1%;
+        background-color: rgba(255, 239, 227, 0.62);
+        z-index: 20;
+        position: absolute;
+        bottom: 25px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        padding-top: 19.54px;
+        padding-bottom: 19.54px;
+    
+    }
+    &__foto_bg_2{
+        left: 0;
+        right: 0;
+        top: auto;
+        padding-top: 19.54px;
+    padding-bottom: 19.54px;
+    width: 91.4%;
+    background-color: rgba(255, 239, 227, 0.62);
+    z-index: 20;
+    position: absolute;
+    bottom: 38px;
+    display: flex;
+    justify-content: center;
+    margin-left: 18px;
+    }
+    &__project__resolution{
+        display: none;
+    }
+}

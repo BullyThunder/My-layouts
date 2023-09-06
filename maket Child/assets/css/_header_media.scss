@@ -1,0 +1,177 @@
+.header{
+    &__bottom__image{
+        @include media ('426px'){
+          display: block;
+          position: absolute;
+          bottom: 0px;
+          width: 100%;
+          bottom: -30px;
+      }
+      }
+      &__content{
+        &__left{
+            &__extra{
+                @include media ('426px'){
+                    display: none;
+                }
+            }
+        }
+        &__padding{
+            @include media ('1000px'){
+                padding-top: 23px;
+                padding-bottom: 23px;
+            }
+        }
+        &__middle{
+            @include media ('1000px'){
+                display: none;
+            }
+        }
+       &__right__block:nth-child(3){
+        @include media ('921px'){
+            display: none;
+        }
+       }
+      
+    }
+        &__top{
+            @include media ('475px'){
+                font-size: 10px;
+                line-height: 10px;
+                text-align: center;
+
+            }
+        } 
+        &__burger-menu{
+            @include media ('768px'){
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                padding-right: 23.67px;
+            }
+        }
+        &__burger-menu_button{
+            @include media ('768px'){
+                position: absolute;
+                z-index: 30;
+                width: 54px;
+                height: 54px;
+                -webkit-transition: 0.4s;
+                -moz-transition: 0.4s;
+                -o-transition: 0.4s;
+                transition: 0.4s;
+                cursor: pointer;
+            }
+        }
+        @include media ('768px') { 
+        &__burger-menu_lines::before,
+        &__burger-menu_lines::after,
+        &__burger-menu_lines{  
+      position: absolute;
+      width: 22px;
+      height: 2px;
+      background-color: white;
+      -webkit-transition: 0.4s;
+      -moz-transition: 0.4s;
+      -o-transition: 0.4s;
+      transition: 0.4s;
+    }
+        }
+        &__burger-menu_lines { @include media ('768px'){
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+        }
+        &__burger-menu_lines::before { @include media ('768px'){  content: '';
+      top: -6px;
+    }
+        }
+    
+        &__burger-menu_lines::after { @include media ('768px'){
+      content: '';
+      top: 6px;
+    }
+        }
+    
+    
+        &__burger-menu_active &__burger-menu_lines { @include media ('768px') {
+      background-color: transparent;
+    }
+        }
+        &__burger-menu_active &__burger-menu_lines::before { @include media ('768px') {
+      top: 0;
+      transform: rotate(45deg);
+    }
+        }
+        &__burger-menu_active &__burger-menu_lines::after{ @include media ('768px'){
+      top: 0;
+      transform: rotate(-45deg);
+    }
+        }
+    
+        &__burger-menu_nav { @include media ('768px'){
+      padding-top: 120px;
+      position: fixed;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      flex-flow: column;
+      flex-wrap: wrap;
+      height: 100%;
+      background-color: rgba(36, 69, 30, 0.48);
+      overflow-y: auto;
+      left: -100%;
+      -webkit-transition: 0.8s;
+      -moz-transition: 0.8s;
+      -o-transition: 0.8s;
+      transition: 0.8s;
+      @include media ('351px'){
+        left: -110%;
+      }
+    }
+        }
+        &__burger-menu_active &__burger-menu_nav {@include media ('768px') {
+      left: 0;
+      -webkit-transition: 0.4s;
+      -moz-transition: 0.4s;
+      -o-transition: 0.4s;
+      transition: 0.4s;
+    }
+        }
+        &__burger-menu_link { @include media ('768px'){
+      padding: 18px 35px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-weight: 400;
+      color: white;
+      border-bottom: 1px solid #fff;
+    }
+        }
+        &__burger-menu_link:first-child { @include media ('768px'){
+      border-top: 1px solid #fff;
+    }
+        }
+        &__burger-menu_link:hover { @include media ('768px'){
+      filter: brightness(0.9);
+    }
+        }
+        &__burger-menu_overlay { @include media ('768px'){
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 10;
+    }
+        }
+        &__burger-menu_active &__burger-menu_overlay { @include media ('768px'){
+      display: block;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+        }    
+    }

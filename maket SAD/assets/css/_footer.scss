@@ -1,0 +1,96 @@
+.footer{
+    background-image: url('../img/footer__background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    &__container{
+        @extend .container;
+    }
+    &__extra{
+        row-gap: 46px;
+    }
+    &__content{
+        display: flex;
+        row-gap: 33px;
+        flex-direction: column;
+        &__bottom{
+
+        }
+        &__image{
+            display: flex;
+            column-gap: 32.63px;
+        }
+        &__extra{
+            display: flex;
+            justify-content: end;
+        }
+        &__icons{
+            display: flex;
+            flex-direction: column; 
+        }
+        &__title{
+            @include font-Merriweather-400-18;
+            color:rgba(255, 255, 255, 1);
+        }
+        &__padding{
+        padding-top: 60px;
+        padding-bottom: 33px;
+        }
+        &__bottom{
+            display: flex;
+            justify-content: space-between;
+            width: 89%;
+            &__padding{
+                padding-bottom: 49px;
+            }
+            &__centre{
+                display: flex;
+                flex-direction: column;        
+            }
+            &__right{
+                column-gap: 13px;
+                display: flex;
+                align-items: center;
+                @include font-Roboto-300-14;
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+    }
+    &__text__style{
+        @include font-Roboto-300-14;
+        color:rgba(255, 255, 255, 1);
+    }
+    &__text__icons{
+        display: flex; 
+        column-gap: 9px;
+        align-items: center;
+        &__extra{
+            align-items: end;
+        }   
+    }
+    &__text__number{
+        @include font-Roboto-400-14;
+        color:rgba(255, 255, 255, 1);
+    }
+    &__image{
+        max-width: 9px;
+        max-height: 10px;
+    }
+    &__background{
+       width: 100%;
+        
+    }
+    &__block{
+        @include font-Roboto-400-14;
+        color:rgba(90, 85, 77, 1);
+        padding-bottom: 28px;
+        display: flex;
+        justify-content: end;
+        width: 85%;
+    }
+    &__flex{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 21px;
+    }
+    
+}

@@ -1,0 +1,265 @@
+.popular{
+    &__container{
+        @extend .container;
+    }
+    &__slick{
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+        &__padding{
+            padding-bottom: 80px;
+        }
+        &__bottom{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            @include font-Montserrat-600-20;
+            color:#1D1D1D;
+            &__size{
+                display: flex;
+                column-gap: 10px;
+            }
+            &__extra{
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                color:#1D1D1D;
+                @include font-Montserrat-400-14;
+                a{
+                    color:#1D1D1D;
+                }
+            }
+            &__flex{
+                display: flex;
+                justify-content: space-between;
+                a{
+                color:#1D1D1D;
+                }
+            }
+        }
+        &__image{
+            position: absolute;
+            top:24.25px;
+            right: 9.83px;
+        }
+        &__span{
+            position: absolute;
+            bottom: 0px;
+            left:0px;
+            color:white;
+            padding-top: 5px;
+            padding-right: 11px;
+            padding-left: 11px;
+            padding-bottom: 5px;
+            @include font-Montserrat-600-14;
+            line-height: 14px;
+            background-color: #13ED1C;
+            z-index: 10;
+            &__extra{
+                position: absolute;
+            bottom: 0px;
+            left:0px;
+            color:white;
+            padding-top: 5px;
+            padding-right: 11px;
+            padding-left: 11px;
+            padding-bottom: 5px;
+            @include font-Montserrat-600-14;
+            line-height: 14px;
+            background-color: #ED1331;
+            z-index: 10;
+            }
+        }
+        &__block{
+           
+            &__flex{
+
+                position: relative;
+                text-align: center;
+            
+                img{
+                    z-index: 1;
+                    max-width: 100%;
+                    
+                }
+                img:hover{
+                    background-color: red;
+                    border-radius: 20px;
+                }
+            }
+            &__flex:hover{
+                cursor: pointer;
+                opacity: 0.9;
+                backdrop-filter: blur(2.5px);
+            }
+            &__flex:hover img{
+                cursor: pointer;
+                opacity: 0.9;
+                
+            }
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+    &__actual{
+        &__top{
+            a{
+                color:  #1D1D1D;
+            }
+            a + a{
+                display: none;
+            }
+        }
+        &__padding{
+            padding-bottom: 80px;
+        }
+        &__text{
+            @include font-Montserrat-400-20;
+        }
+        &__content{
+            display: flex;
+            column-gap: 30px;
+            a{
+                @include font-Montserrat-600-20;
+                color: #1D1D1D;
+            }
+            a + a{
+                @include font-Montserrat-400-20;
+                color: #565656;
+            }
+            &__right{
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                &__bottom{
+                    &__right{
+                        display: flex;
+                        column-gap: 10px;
+                        align-items: center;
+                        @include font-Montserrat-400-14;
+                        color: #565656;
+                        line-height: 14px;
+                        
+                    }
+                    &__left{
+                        @include font-Montserrat-600-20;
+                        color:#1D1D1D;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 10px;
+                        line-height: 20px;
+                        &__top img{
+                            min-height: 285px;
+                        }
+                        span + span{
+                            @include font-Montserrat-400-20;
+                            color:#565656;
+                        }
+
+                    }
+                    display: flex;
+                    justify-content: space-between;
+                }
+                &__top{
+                    img{
+                        max-width: 100%;
+                        width: 100%;
+                        min-height: 660px;
+                    }
+                }
+            }
+            &__left{
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                &__top{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+                    img{
+                        max-width: 100%;
+                        width: 100%;
+                        min-height: 285px;
+                    }
+                }
+                &__bottom{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+                    img{
+                        max-width: 100%;
+                        width: 100%;
+                    }
+                    
+                    
+                }
+            }
+        }
+        &__top{
+            display: flex;
+            justify-content: start;
+            color:#1D1D1D;
+            @include font-Montserrat-600-30;
+            &__padding{
+                padding-bottom: 40px;
+            }
+        }
+    }
+    &__sales{
+        background-color: #FFC803;
+        width: 100%;
+        margin-bottom: 80px;
+        &__mobile{
+            display: none;
+        }
+        &__padding{
+            padding-top: 71px;
+            padding-bottom: 71px;
+        }
+        &__content{
+            display: flex;
+            column-gap: 28px;
+            align-items: center;
+            &__middle{
+                position: relative;
+                button{
+                    position: absolute;
+                    right: 0px;
+
+                    background-color: #1D1D1D;
+                    color: #FFFFFF;
+                    padding: 18px 48px;
+                    border-radius: 50px;
+
+                }
+                input{
+                    
+                border-color: transparent;
+                padding-top:18px;
+                padding-bottom: 18px;
+                padding-left: 30px;
+                border-radius: 50px;
+                min-width: 510px;
+                }
+                ::placeholder{
+                    @include font-Montserrat-400-14;
+                    line-height: 14px;
+                    color:#565656;
+                }
+            }
+            &__left{
+                @include font-Montserrat-600-40;
+                color:#FFFFFF;
+            }
+            &__right{
+                display: flex;
+                column-gap: 20px;
+                img{
+                    max-width: 38px;
+                    max-height: 38px;
+                }
+            }
+        }
+    }
+}

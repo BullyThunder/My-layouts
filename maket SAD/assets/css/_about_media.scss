@@ -1,0 +1,36 @@
+.about{
+    &__absolute{
+        @include media ('1439px'){
+            display: none;
+        }
+    }
+    &__text__none{
+        @include media ('425px'){
+            display: none;
+        }
+    }
+    &__right__absolute{
+        @include media ('425px'){
+            display: none;
+        }
+    }
+    &__project__resolution{
+        @include media ('426px'){
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+    &__project__block_right{
+        @include media ('426px'){
+            display: none;
+        }
+    }
+    &__project__block{
+        @include media ('426px'){
+           flex-direction: column-reverse;
+           align-items: center;
+           row-gap: 9px;
+        }
+    }
+}

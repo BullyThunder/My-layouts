@@ -1,0 +1,72 @@
+.fashion{
+    &__padding{
+        padding-bottom: 80px;
+    }
+    &__container{
+        @extend .container;
+    }
+    &__content{
+        display: flex;
+        column-gap: 30px;
+        &__block{
+            @include font-Montserrat-600-20;
+            color: #1D1D1D;
+            display: flex;
+            flex-direction: column;
+            row-gap: 21px;  
+            img{
+                width: 100%;
+                max-width: 100%;
+                
+            }
+            &__text{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px; 
+            &__span {
+                @include font-Montserrat-400-20;
+                color:#565656;
+            }
+            &__title{
+                @include font-Montserrat-600-20;
+                color:#1D1D1D ;
+            }
+            }      
+        }
+    }
+    &__contents{
+        display: none;
+        column-gap: 30px;
+        &__block{
+            @include font-Montserrat-600-20;
+            color: #1D1D1D;
+            display: none;
+            flex-direction: column;
+            row-gap: 21px;  
+            img{
+                width: 100%;
+                max-width: 100%
+            }
+            &__text{
+            display: none;
+            flex-direction: column;
+            row-gap: 10px; 
+            span + span{
+                @include font-Montserrat-400-20;
+                color:#565656;
+            } 
+            }      
+        }
+    }
+    &__title{
+        @include font-Montserrat-600-30;
+        line-height: 30px;
+        color:#1D1D1D;
+        a{
+            color:#1D1D1D; 
+        }
+        &__padding{
+            padding-bottom: 40px;
+        }
+    }
+}

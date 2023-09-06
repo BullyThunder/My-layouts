@@ -1,0 +1,35 @@
+.footer{
+   &__content__bottom__centre{
+    @include media ('739px'){
+        display: none;
+        }   
+    }
+    &__content__bottom{
+        @include media ('459px'){
+            flex-direction: column;
+            row-gap: 5px;
+        }   
+    } 
+    &__text__style{
+        @include media ('459px'){
+            display: none;
+        } 
+    }
+    &__content__title{
+        @include media ('461px'){
+            
+            font-size: 12px;
+        } 
+    }
+    &__content__extra{
+        @include media ('641px'){
+            display: none;
+        } 
+    }
+    &__flex{
+        @include media ('461px'){
+            flex-direction: column;
+           row-gap: 12px;
+        } 
+    }
+} 

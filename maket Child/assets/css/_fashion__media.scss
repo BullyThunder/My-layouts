@@ -1,0 +1,64 @@
+.fashion{
+    &__padding{
+        @include media ('426px'){
+            padding-bottom: 60px;
+         } 
+    }
+    &__title{
+        &__padding{
+            @include media ('426px'){
+                padding-top: 60px;
+             } 
+        }
+    }
+    &__title{
+        @include media ('426px'){
+            @include font-Montserrat-600-20;
+            
+         } 
+    }
+    &__contents{
+        overflow: hidden;
+        @include media ('507px'){
+        display: flex;
+        row-gap: 40px;
+        flex-direction: column;
+        &__block{
+            @include font-Montserrat-600-16;
+            color: #1D1D1D;
+            display: flex;
+            flex-direction: column;
+            row-gap: 21px;  
+            img{
+                width: 100%;
+                max-height: 508px;
+                max-width: 343px;
+            }
+            &__text{
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px; 
+            span + span{
+                @include font-Montserrat-400-14;
+                color:#565656;
+            } 
+            }      
+        }
+    }
+        }
+        &__content{
+            @include media('507px'){
+            display: none;
+            
+            &__block{
+                
+                display: none;
+                 
+                &__text{
+                display: none;
+                
+                }      
+            }
+        }
+    }
+}

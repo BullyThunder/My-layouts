@@ -1,0 +1,177 @@
+.category{
+    &__container{
+        @extend .container;
+    }
+    &__padding{
+        padding-top: 94px;
+    }
+    &__contents__right__top{
+        display: none;
+    }
+    &__contents{
+        display: none;
+        flex-direction: row;
+        column-gap: 50px;
+        &__left{
+            display: none;
+            width: 28%;
+            background-color: #00FFFF;
+            height: 100%;
+        }
+        &__right{
+            display: none;
+            width: 72%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+            &__text{
+                display: none;
+                @include font-Montserrat-400-16;
+                color:#565656;
+                max-width: 740px;
+
+            }
+            &__title{
+                display: none;
+                @include font-Montserrat-600-30;
+                color: #1D1D1D;
+                a{
+                color: #1D1D1D;
+                }
+            }
+            &__top{
+                display: none;
+                display: flex;
+                flex-direction: column;
+            row-gap: 20px;
+            }
+        }
+        &__bottom{
+            display: flex;
+            justify-content: space-between;
+            &__catalog{
+                @include font-Montserrat-600-14;
+                display: flex;
+                align-items: start;
+                column-gap: 10px;
+                padding-top: 5px;
+                a span{
+                    @include font-Montserrat-600-14;
+                    color:#565656;
+                }
+                }
+            &__title{
+                @include font-Montserrat-600-30;
+                color:#1D1D1D;
+                &__padding{
+                    padding-bottom: 48px;
+                }
+            }
+            &__padding{
+                padding-top: 80px;
+            }
+        }
+    }
+    &__content{
+        overflow: hidden;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        column-gap: 50px;
+        &__left{
+            width: 28%;
+            background-color: #00FFFF;
+            height: 100%;
+            &__media{
+                display: none;
+            }
+        }
+        &__right{
+            width: 72%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+            &__text{
+                @include font-Montserrat-400-16;
+                color:#565656;
+                max-width: 740px;
+
+            }
+            &__title{
+                @include font-Montserrat-600-30;
+                color:#1D1D1D;
+            }
+            &__top{
+                display: flex;
+                flex-direction: column;
+            row-gap: 20px;
+            }
+        }
+        &__bottom{
+            display: flex;
+            justify-content: space-between;
+            &__extra{
+                display: none;
+            }
+            &__catalog{
+                @include font-Montserrat-600-14;
+                display: flex;
+                align-items: start;
+                column-gap: 10px;
+                padding-top: 5px;
+                a span{
+                    @include font-Montserrat-600-14;
+                    color:#565656;
+                }
+                }
+            &__title{
+                @include font-Montserrat-600-30;
+                color:#1D1D1D;
+                &__padding{
+                    padding-bottom: 48px;
+                }
+            }
+            &__padding{
+                padding-top: 80px;
+            }
+        }
+    }
+    &__slick{
+        &__text{
+            display: flex;
+            justify-content: center;
+            @include font-Montserrat-600-20;
+            color:#1D1D1D;
+        }
+        &__block{
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+            
+            &__slide{
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                @include font-Montserrat-600-20;
+                img{
+                    max-width: 203px;
+                    min-height: 301px;
+                }
+                &__image{
+                    max-width: 202px;
+                    max-height: 301px;
+                }
+            }
+        }
+    }
+    &__slick{
+        &__content{
+            &__container{
+                max-width: 1275px;
+                margin: 0px auto;
+                width: 90%;
+            }
+        }
+    }
+
+}

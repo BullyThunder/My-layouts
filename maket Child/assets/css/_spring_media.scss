@@ -1,0 +1,210 @@
+.spring{
+    &__button__style{
+        @include media ('749px'){
+            max-width: 24px;
+            height: 12px;
+        }
+    }
+    &__item__content{
+        @include media ('1465px'){
+          flex-wrap: wrap;
+          row-gap: 20px;
+      }
+      }
+      &__image{
+        @include media ('749px'){
+           display: none;
+        }
+      }
+      &__images{
+        @include media ('9999px'){
+            display: none;
+        }
+        @include media ('749px'){
+            display: flex;
+        }
+        
+        &__absolute{
+            @include media ('9999px'){
+                display: none;
+            }
+            &__padding{
+                @include media ('749px'){
+                   padding: 30px 50px;
+                }
+                @include media ('426px'){
+                    padding-top: 54px;
+                    padding-bottom: 54px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }
+            @include media ('749px'){
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.7);
+                backdrop-filter: blur(2.5px);
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                top:17%;
+                max-width: 180px;
+                @include font-Montserrat-500-40;
+                flex-direction: column;
+                row-gap: 20px;
+                &__title{
+                    font-size: 48px;
+                }
+                &__text{
+                    font-size: 30px;
+                }
+                &__title{
+                    @include media ('426px'){
+                        font-size: 40px;
+                    }
+                }
+                &__text{
+                    @include media ('426px'){
+                        font-size: 20px;
+                    }
+                }
+                @include media ('426px'){
+                    max-width: 100%;
+                }
+                @include media ('375px'){
+                    max-width: 290px;
+                }
+                @include media ('365px'){
+                    max-width: 250px;
+                }
+            }
+            @include media ('365px'){
+                top:8%;
+            }
+            @include media ('645px'){
+                display: none;
+            }
+            @include media ('426px'){
+                display: none;
+            }
+            @include media ('414px'){
+                margin-left: 30px;
+            }
+            @include media ('414px'){
+                margin-left: 25px;
+            }
+            @include media ('395px'){
+                margin-left: 20px;
+            }
+            @include media ('376px'){
+                margin-left: 15px;
+                display: flex;
+            }
+            @include media ('366px'){
+                margin-left: 10px;
+            }
+            @include media ('356px'){
+                margin-left: 5px;
+            }
+        }
+      }
+      &__image__absolute__title{
+        @include media ('1409px'){
+            font-size: 44px;
+        }
+        @include media ('969px'){
+            font-size: 34px;
+        }
+      }
+      &__image__absolute__text{
+        @include media ('1407px'){
+            font-size: 26px;
+        }
+        @include media ('1218px'){
+            font-size: 20px;
+        }
+        @include media ('938px'){
+            font-size: 18px;
+        }
+        @include media ('845px'){
+            font-size: 15px;
+        }
+      }
+      &__image__absolute__padding{
+        @include media ('1465px'){
+            padding-top: 49px;
+            padding-bottom: 49px;
+        }
+
+        @include media ('1312px'){
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        @include media ('1080px'){
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        @include media ('1080px'){
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        @include media ('426px'){
+            padding-left: 38.5px;
+            padding-right: 38.5px;
+        }
+        @include media ('365px'){
+            padding-bottom: 20px;
+        }
+      }
+      &__image__absolute{
+        @include media ('1080px'){
+            row-gap: 15px;
+        }
+
+      }
+      &__content{
+        @include media ('749px'){
+            display: none;      
+        }
+      }
+      &__wrapper{
+
+        @include media ('749px'){
+            max-height: 618px;  
+             
+        }
+        
+      }
+      &__buttons{
+        @include media ('749px'){
+            max-width: 173px;
+            max-height: 50px;  
+            display: flex;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        background-color: #404444;
+        padding-left: 27px;
+        padding-right: 27px;
+        border-radius: 50px;
+        column-gap: 10px;
+        align-items: center;  
+        img{
+            max-width: 20px;
+            }
+        }
+      }
+    
+      &__wrappers{
+        &__image{
+        max-width: 100%;
+        width: 100%;
+        }
+        &__image{
+        @include media ('426px'){
+            max-height: 418px;  
+            max-width: 100%;
+            width: 100%;
+                }
+                
+            }   
+        }
+    }

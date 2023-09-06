@@ -1,0 +1,68 @@
+@mixin font-Roboto-500-14{
+    font-family: "Roboto";
+font-size: 14px;
+font-weight: 300;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+@mixin font-Roboto-500-24{
+    font-family: "Roboto";
+font-size: 24px;
+font-weight: 300;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+}
+@mixin font-Roboto-400-14{
+    font-family: "Roboto";
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.1em;
+
+}
+@mixin font-Roboto-400-18{
+    font-family: "Roboto";
+font-size: 18px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+@mixin font-Roboto-300-14{
+font-family: "Roboto";
+font-size: 14px;
+font-weight: 300;
+line-height: 20px;
+letter-spacing: 0.1em;
+text-align: justify;
+}
+@mixin font-Merriweather-300-36{
+    font-family: "Merriweather";
+font-size: 36px;
+font-weight: 300;
+line-height: 42px;
+letter-spacing: 0.03em;
+text-align: left;
+}
+@mixin font-Merriweather-400-18{
+    font-family: "Merriweather";
+font-size: 18px;
+font-weight: 400;
+line-height: 23px;
+letter-spacing: 0em;
+text-align: left;
+}
+@mixin media($resolution){
+    @media (max-width: $resolution){
+        @content;
+    }
+}
+@mixin media_min ($resolution){
+    @media (min-width: $resolution){
+        @content;
+    }
+}

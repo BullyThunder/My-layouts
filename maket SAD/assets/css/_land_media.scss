@@ -1,0 +1,103 @@
+.land{
+    @include media ('426px'){
+        background-image: none;
+    }
+    &__right{
+        @include media ('426px'){
+            display: none;
+        }
+    }
+    &__right__resolution{
+        @include media ('426px'){
+            display: block;
+        }
+    }
+    &__content{
+        @include media ('426px'){
+            flex-direction: column-reverse;
+            align-items: center;
+            row-gap: 4px;
+        }
+    }
+    &__rev__block{
+        @include media ('620px'){
+            flex-direction: column;
+            row-gap: 20px;
+        }
+        @include media ('321px'){
+            display: none;
+        }
+    }
+    &__rev__display{
+        @include media ('426px'){
+            display: none;
+        }
+    }
+    &__rev__resolution{
+        @include media ('426px'){
+            display: block;
+        }
+    }
+    &__rev__content{
+        @include media ('426px'){
+            row-gap: 4px;
+        }
+    }
+    &__block img{
+        @include media ('426px'){
+            width: 265px;
+            max-height: 101px;
+        }
+    }
+    &__block__content__extra{
+        @include media ('1178px'){
+            display: flex;
+        }
+    }
+    &__block__extra{
+        @include media ('1178px'){
+            display: none;
+        }
+    }
+    &__slider{
+        @include media ('321px'){
+            position: relative;
+        }
+        &__bg{
+        @include media ('321px'){
+                display: block;
+                img{
+                    position: absolute;
+                    
+                    right: 0;
+                }
+            }
+        }
+        @include media ('321px'){
+            display: flex;
+        &__image{
+            width: 51px;
+            height: 51px;
+        }
+        &__block{
+            padding-top: 10px;
+            padding-left: 9px;
+            padding-right: 6px;
+            padding-bottom: 14px;
+            min-width: 214px;
+            max-height: 274px;
+            z-index: 15;
+        display: flex;
+        flex-direction: column;
+        row-gap: 14px;
+        background-color: rgba(239, 239, 239, 0.61);
+            }
+        }
+    }
+    &__rev__content__padding{
+        @include media ('321px'){
+            padding-bottom: 21px;
+        }
+    } 
+    
+}

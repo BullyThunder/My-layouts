@@ -1,0 +1,15 @@
+.slick__slider{
+    &__container{
+        @extend .container;
+    }
+    &__padding{
+        padding-top: 40px;
+    }
+    &__block{
+        flex-direction: column;
+        img{
+        max-width: 250px;
+        max-height: 200px;
+        }
+    }
+}

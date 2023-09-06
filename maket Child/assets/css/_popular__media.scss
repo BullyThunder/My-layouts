@@ -1,0 +1,159 @@
+.popular{
+    &__actual__top a+a{
+        @include media ('426px'){
+            display: flex;
+            font-size: 20px;
+            line-height: 20px;
+         }
+    }
+    &__actual__dis{
+            @include media ('426px'){
+               display: none;
+            }
+        }
+    &__actual__content__right__top img{
+        @include media ('1126px'){
+            min-height: 0px;
+        }
+    }
+    &__actual__content__left__top img{
+        @include media ('1126px'){
+            min-height: 0px;
+        }
+    }
+    &__actual__content{
+        @include media ('1025px'){
+            flex-direction: column-reverse;
+            row-gap: 30px;
+        }
+        &__right__bottom__left{
+            @include media ('426px'){
+                font-size: 16px;
+                line-height: 16px;
+                span + span{
+                    font-size: 14px;
+                    line-height: 14px;
+                }
+            }
+        }
+        &__left__bottom span{
+            font-size: 16px;
+            line-height: 16px;
+        }
+        &__left__bottom span + span{
+             @include media ('426px'){
+            font-size: 14px;
+            line-height: 14px;
+        }
+        span{
+            @include media ('426px'){
+                font-size: 16px;
+                line-height: 16px;
+                span + span{
+                    font-size: 14px;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+        &__right__bottom__right{
+            @include media ('426px'){
+                display: none;
+            }
+        }
+        &__left{
+        @include media ('1025px'){
+            flex-direction: row;
+            column-gap: 30px;
+            justify-content: center;
+        }
+    }
+    }      
+    &__actual__padding{
+        @include media ('1126px'){
+            padding-bottom: 0px;
+        }
+    }
+    &__sales{
+        @include media ('426px'){
+            margin-bottom: 0px;
+        }
+        &__content__right{
+        @include media ('426px'){
+            display: none;
+        }
+    }   
+        &__padding{
+            @include media ('426px'){
+                padding-bottom: 45px;
+                padding-top: 45px;
+            } 
+        }
+        &__mobile{
+            @include media ('426px'){
+                display: flex;
+                flex-direction: column;
+                row-gap: 30px;
+                line-height: 18.2px;
+                @include font-Montserrat-400-14-1;
+                text-align: center;
+                color: #FFFFFF;
+                &__text span span{
+                   @include font-Montserrat-500-14;
+                   color:  #FFFFFF;
+                   border-bottom: 1px solid #FFFFFF;
+                }
+                &__padding{
+                    padding-top: 38px;
+                    padding-bottom: 38px;
+                }
+                &__icons{
+                    display: flex;
+                    justify-content: center;
+                    column-gap: 20px;
+                }
+            }
+            &__padding{
+                @include media ('426px'){
+                    
+                }
+            }
+        }
+        &__content{
+            &__left{
+                @include media ('581px'){
+                    text-align: center;
+                    max-width: 270px;
+                    line-height: 42px;
+                }
+            }
+            @include media ('1100px'){
+                flex-direction: column;
+                row-gap: 30px;
+            }
+            &__middle{
+                & input{
+                    @include media ('612px'){
+                        min-width: 270px;
+                        max-width: 545px;
+                    }
+                }
+                & button{
+                    @include media ('612px'){
+                        position: relative;
+                        margin-top: 20px;
+                        width: 100%;
+                        justify-content: center;
+                        max-width: 100%;
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+    &__wrapper{
+        @include media ('426px'){
+            background-color: #7002FE;
+        }
+    }
+}

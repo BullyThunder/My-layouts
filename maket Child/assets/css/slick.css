@@ -1,0 +1,664 @@
+.category__slick__block .slick-slider{
+	
+}
+/* Ограничивающая оболочка */
+.category__slick__content  .slick-list {
+	overflow: hidden;
+	
+}
+/* Лента слайдов */
+.category__slick__content  .slick-track{
+	display: flex;
+	flex-direction: row;
+}
+
+/* Слайд */
+.slick-slider{}
+/* Слайд активный */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+/* Точки */
+.slick-dots{}
+.slick-dots li{}
+.slick-dots button{}
+
+/* Конкретный слайдер */
+.programms__slider {
+	
+	
+}
+
+
+.category__slick__content  .slick-arrow{
+	
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 60px;
+}
+.category__slick__content  .slick-track{
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	
+}
+.category__slick__content  .slick-arrow{
+	position: absolute;
+	z-index: 10;
+}
+.category__slick__content{
+	position: relative;
+}
+
+.category__slick__content  .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+
+.category__slick__content  .slick-dots{
+	display: flex;
+	cursor: pointer;
+	flex-direction: row;
+	justify-content: center;
+	position: absolute;
+    bottom: 9px;
+    left: 32%;
+}
+@media screen and (max-width: 1269px){
+.category__slick__content  .slick-dots{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	bottom: 0;
+	left: 0;
+}
+}
+@media screen and (max-width: 1269px){
+	.category__slick__content  {
+		flex-direction: column;
+		display: flex;
+		row-gap: 20px;
+	}
+	}
+@media screen and (max-width: 916px){
+.category__slick__content{
+	row-gap: 10px;
+}
+}
+
+
+
+.category__slick__content  .slick-dots li{
+	list-style: none;
+}
+.category__slick__content .slick-dots button{
+	font-size: 0;
+	
+	border: none;
+	background:none;
+}
+.category__slick__content li::before {
+    content: url('../img/slick__dots.svg');
+	
+	display: inline-block;
+}
+.category__slick__content li.slick-active::before {
+	content: url('../img/slick__dots-active.svg');
+	
+	display: inline-block;
+}
+
+.category__slick__content{
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+}
+.category__slick__content  .slick-list {
+	overflow: hidden;
+	
+}
+.category__slick__content  .slick-track {
+	overflow: hidden;
+	
+}
+
+
+
+
+
+
+
+
+
+.popular__slick .slick-slider{
+	min-height: 274px;
+}
+/* Ограничивающая оболочка */
+.popular__slick  .slick-list {
+	overflow: hidden;
+	
+}
+/* Лента слайдов */
+.popular__slick  .slick-arrow{
+	overflow-x: hidden;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 60px;
+}
+.popular__slick  .slick-track{
+	overflow: hidden;
+	display: flex;
+	column-gap: 30px;
+}
+@media screen and (max-width: 426px){
+	.popular__slick  .slick-track{
+		column-gap: 19px;
+	}
+}
+.popular__slick  .slick-arrow{
+	position: absolute;
+	z-index: 10;
+}
+
+.popular__slick  .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+
+.popular__slick  .slick-dots{
+	display: flex;
+	cursor: pointer;
+	justify-content: center;
+}
+
+
+.popular__slick  .slick-dots li{
+	list-style: none;
+}
+.popular__slick .slick-dots button{
+	font-size: 0;
+	
+	border: none;
+	background:none;
+}
+.popular__slick li::before {
+    content: url('../img/slick__dots.svg');
+	
+	display: inline-block;
+}
+.popular__slick li.slick-active::before {
+	content: url('../img/slick__dots-active.svg');
+	
+	display: inline-block;
+}
+
+.popular__slick {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	display: flex;
+    flex-direction: column;
+	row-gap: 40px;
+	position: relative;
+}
+.popular__slick .slick-arrow.slick-prev {
+	position: absolute;
+		top: 30%;
+		left: 0px;
+		background: url('../img/popular__arrow__prev.svg') 0 0 / 100% no-repeat;
+		width: 40px;
+		height: 40px;
+		border: 0;
+}
+
+.popular__slick .slick-arrow.slick-next {
+	top: 30%;
+	right: 0px;
+	position: absolute;
+	background: url('../img/popular__arrow__next.svg') 0 0 / 100% no-repeat;
+    width: 40px;
+    height: 40px;
+    border: 0;
+}
+@media screen and (max-width: 1260px){
+	.popular__slick .slick-arrow.slick-next{
+		top:27%;
+	}
+	.popular__slick .slick-arrow.slick-prev{
+		top:27%;
+	}
+}
+@media screen and (max-width: 980px){
+	.popular__slick .slick-arrow.slick-next{
+		top:24%;
+	}
+	.popular__slick .slick-arrow.slick-prev{
+		top:24%;
+	}
+}
+@media screen and (max-width: 700px){
+	.popular__slick .slick-arrow.slick-next{
+		top:22%;
+	}
+	.popular__slick .slick-arrow.slick-prev{
+		top:22%;
+	}
+}
+@media screen and (max-width: 600px){
+	.popular__slick .slick-arrow.slick-next{
+		top:15%;
+	}
+	.popular__slick .slick-arrow.slick-prev{
+		top:15%;
+	}
+}
+@media screen and (max-width: 400px){
+	.popular__slick .slick-arrow.slick-next{
+		top:12%;
+	}
+	.popular__slick .slick-arrow.slick-prev{
+		top:12%;
+	}
+}
+.popular__slick .slick-arrow{
+	position: absolute;
+	
+	top:38%;
+	font-size: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.popular__slick .slick-slider{
+	min-height: 274px;
+}
+/* Ограничивающая оболочка */
+.popular__slick  .slick-list {
+	overflow: hidden;
+	
+}
+/* Лента слайдов */
+.popular__slick  .slick-arrow{
+	overflow-x: hidden;
+	z-index: 10;
+	font-size: 0;
+	width: 30px;
+	height: 60px;
+}
+.popular__slick  .slick-track{
+	overflow: hidden;
+	display: flex;
+	column-gap: 30px;
+}
+@media screen and (max-width: 426px){
+	.popular__slick  .slick-track{
+		column-gap: 19px;
+	}
+}
+
+.fashion__contents  .slick-arrow{
+	position: absolute;
+	z-index: 10;
+}
+
+.fashion__contents  .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+.fashion__contents  .slick-track{
+	overflow-x: hidden;
+	display: flex;
+	column-gap: 20px;
+}
+@media screen and (max-width: 507px){
+.fashion__contents  .slick-track{
+	overflow-x: hidden;
+	display: flex;
+	column-gap: 40px;
+}
+}
+.fashion__contents  .slick-dots{
+	display: flex;
+	cursor: pointer;
+	justify-content: center;
+}
+
+
+.fashion__contents  .slick-dots li{
+	list-style: none;
+}
+.fashion__contents .slick-dots button{
+	font-size: 0;
+	
+	border: none;
+	background:none;
+}
+.fashion__contents li::before {
+    content: url('../img/slick__dots.svg');
+	
+	display: inline-block;
+}
+.fashion__contents li.slick-active::before {
+	content: url('../img/slick__dots-active.svg');
+	
+	display: inline-block;
+}
+
+.fashion__contents {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	
+	position: relative;
+}
+.fashion__contents .slick-arrow.slick-prev {
+	position: absolute;
+		top: 30%;
+		left: 0px;
+		background: url('../img/popular__arrow__prev.svg') 0 0 / 100% no-repeat;
+		width: 40px;
+		height: 40px;
+		border: 0;
+}
+
+.fashion__contents .slick-arrow.slick-next {
+	top: 30%;
+	right: 0px;
+	position: absolute;
+	background: url('../img/popular__arrow__next.svg') 0 0 / 100% no-repeat;
+    width: 40px;
+    height: 40px;
+    border: 0;
+}
+
+
+
+
+.spring__images .slick-list {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	
+}
+.spring__images  .slick-arrow{
+	position: absolute;
+	z-index: 10;
+}
+
+.spring__images  .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+.spring__images  .slick-track{
+	overflow-x: hidden;
+	display: flex;
+	column-gap: 20px;
+}
+.spring__images  .slick-dots{
+	display: flex;
+	cursor: pointer;
+	justify-content: center;
+}
+@media screen and (max-width: 426px){
+	.spring__images  .slick-dots{
+		position: absolute;
+		bottom:20px;
+		left: 38%;
+	}
+}
+
+.spring__images  .slick-dots li{
+	list-style: none;
+}
+.spring__images .slick-dots button{
+	font-size: 0;
+	
+	border: none;
+	background:none;
+}
+.spring__images li::before {
+    content: url('../img/slick__dots.svg');
+	
+	display: inline-block;
+}
+.spring__images li.slick-active::before {
+	content: url('../img/slick__dots-active.svg');
+	
+	display: inline-block;
+}
+@media screen and (max-width: 749px){
+.spring__images {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+}
+}
+.spring__images .slick-arrow.slick-prev {
+	position: relative;
+		top: 30%;
+		left: 0px;
+		background: url('../img/popular__arrow__prev.svg') 0 0 / 100% no-repeat;
+		width: 40px;
+		height: 40px;
+		border: 0;
+}
+
+.spring__images .slick-arrow.slick-next {
+	top: 30%;
+	right: 0px;
+	position: absolute;
+	background: url('../img/popular__arrow__next.svg') 0 0 / 100% no-repeat;
+    width: 40px;
+    height: 40px;
+    border: 0;
+}
+@media screen and (max-width: 426px){
+.spring__images .slick-slider{
+	max-height: 418px;
+}
+.spring__images .slick-track{
+	column-gap: 0px;
+}
+}
+
+
+
+@media screen and (max-width: 1389px){
+.spring__item__content{
+	display: flex;
+	justify-content: center;
+}
+}
+.spring__item__content .slick-list {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+.spring__item__content .slick-arrow{
+	position: absolute;
+	z-index: 10;
+}
+
+.spring__item__content  .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+.spring__item__content  .slick-track{
+	overflow-x: hidden;
+	display: flex;
+	column-gap: 20px;
+}
+.spring__item__content  .slick-dots{
+	display: flex;
+	cursor: pointer;
+	justify-content: center;
+}
+@media screen and (max-width: 426px){
+	
+}
+
+.spring__item__content  .slick-dots li{
+	list-style: none;
+}
+.spring__item__content .slick-dots button{
+	font-size: 0;
+	
+	border: none;
+	background:none;
+}
+.spring__item__content li::before {
+    content: url('../img/slick__dots.svg');
+	
+	display: inline-block;
+}
+.spring__item__content li.slick-active::before {
+	content: url('../img/slick__dots-active.svg');
+	
+	display: inline-block;
+}
+@media screen and (max-width: 749px){
+.spring__item__content {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	display: flex;
+	position: relative;
+	flex-direction: row;
+}
+}
+.spring__item__content .slick-arrow.slick-prev {
+	position: absolute;
+		top: 30%;
+		left: 0px;
+		background: url('../img/popular__arrow__prev.svg') 0 0 / 100% no-repeat;
+		width: 40px;
+		height: 40px;
+		border: 0;
+}
+
+.spring__item__content .slick-arrow.slick-next {
+	top: 30%;
+	right: 0px;
+	position: absolute;
+	background: url('../img/popular__arrow__next.svg') 0 0 / 100% no-repeat;
+    width: 40px;
+    height: 40px;
+    border: 0;
+}
+@media screen and (max-width: 426px){
+.spring__item__content .slick-slider{
+	max-height: 418px;
+}
+.spring__item__content .slick-track{
+	column-gap: 0px;
+}
+}
+@media screen and (max-width: 1389px){
+.spring__item__content img{
+	width: 100%;
+	max-width: 100%;	
+}
+}
+
+
+
+.popular__actual__slick  .slick-arrow{
+	
+}
+
+.popular__actual__slick  .slick-arrow.slick-disabled{
+	opacity: 0.2;
+}
+.popular__actual__slick  .slick-track{
+	overflow-x: hidden;
+	display: flex;
+	column-gap: 20px;
+}
+@media screen and (max-width: 507px){
+.popular__actual__slick  .slick-track{
+	overflow-x: hidden;
+	display: flex;
+	column-gap: 40px;
+}
+}
+.popular__actual__slick  .slick-dots{
+	display: flex;
+	cursor: pointer;
+	justify-content: center;
+}
+
+
+
+.popular__actual__slick .slick-dots button{
+	display: none;
+}
+
+
+
+.popular__actual__slick {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	
+	position: relative;
+}
+.popular__actual__slick .slick-arrow.slick-prev {
+	top: 30%;
+	right: 0px;
+	
+	background: url('../img/actual__arrow__left.svg') 0 0 / 100% no-repeat;
+    width: 40px;
+    height: 40px;
+    border: 0;
+}
+
+.popular__actual__slick .slick-arrow.slick-next {
+	top: 30%;
+	right: 0px;
+	
+	background: url('../img/actual__arrow__right.svg') 0 0 / 100% no-repeat;
+    width: 40px;
+    height: 40px;
+    border: 0;
+}
+.popular__actual__slick  .slick-list {
+	overflow: hidden;
+	
+}
+.prev:hover{
+	cursor: pointer;
+}
+.next:hover{
+	cursor: pointer;
+}

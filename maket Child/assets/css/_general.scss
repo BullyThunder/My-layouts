@@ -1,0 +1,78 @@
+.container{
+    max-width: 1290px;
+    margin: 0px auto;
+    width: 90%;
+}
+h1,h2,h3{
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color:none;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+  body
+  {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  div{
+    margin: 0px;
+    padding: 0px;
+  }
+  .box{
+    position: relative;
+  }
+ 
+  
+  .search-box{
+      width: 30px; /* base width 250px */
+      border-radius: 15px;
+      background: transparent;
+      transition: all .3s;
+      overflow: hidden;
+      cursor: pointer;
+      
+  }
+  
+  .search-box--end{
+      display: flex;
+      justify-content: flex-end;
+  }
+  
+  .search-box--inner{
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      padding: 3px;
+  }
+  
+  .search-box--inner > input{
+      display: none; /* base d unset */
+      height: 18px;
+      width: 87.2%;
+      background: white;
+      border: none;
+      border-radius: 15px;
+      
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  
+  .search-box--inner > button{
+      width: 100%; /* base w 12.8% */
+      background: transparent;
+      border: none;
+      color: white;
+      transform: translate(-6px, -1px);
+      cursor: pointer;
+  }

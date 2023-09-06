@@ -1,0 +1,105 @@
+.spring{
+   
+
+    &__container{
+        @extend .container;
+    }
+    &__content{
+        justify-content: center;
+        display: flex;
+    column-gap: 24px;
+        @include font-Montserrat-600-14;
+        a{
+            color: #1D1D1D;
+        }
+        &__padding{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+    &__image{
+        display: flex;
+        position: relative;
+        &__absolute{
+            position: absolute;
+            max-width: 100%;
+            width: 33.5%;
+            top: 20.5%;
+            left: 26%;
+            display: flex;
+            align-items: center;
+
+            flex-direction: column;
+            row-gap: 30px;
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(2.5px);
+/* Note: backdrop-filter has minimal browser support */
+
+            border-radius: 20px;
+            &__padding{
+                padding-top: 88px;
+                padding-left: 91px;
+                padding-right: 91px;
+                padding-bottom: 89px;
+            }
+            &__title{
+                @include font-Montserrat-500-64;
+                color:#1D1D1D;
+            }
+            &__text{
+                @include font-Montserrat-500-30;
+                color:#1D1D1D;
+            }
+        }
+    }
+    &__wrapper{
+        img{
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    &__button{
+        display: flex;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        background-color: #404444;
+        padding-left: 27px;
+        padding-right: 27px;
+        border-radius: 50px;
+        column-gap: 10px;
+        align-items: center;
+        &__text{
+            @include font-Montserrat-600-14;
+            color:#FFFFFF;
+        }
+    }
+    &__item{
+        &__content{
+            display: flex;
+            flex-direction: row;
+            column-gap: 30px;
+            @include font-Montserrat-600-14;
+            color:#1D1D1D;
+            &__block{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                a{
+                    color: #1D1D1D;
+                }
+                    
+            }
+        }
+        &__padding{
+            padding-top: 80px;
+            padding-bottom: 94px;
+        }
+    }
+    &__text{
+        text-align: center;
+    }
+    &__images{
+        display: none;
+    }
+}

@@ -1,0 +1,115 @@
+.care{
+    background-size: 100% 100%;
+    &__margin{
+        padding-bottom: 90px;
+    }
+    &__container{
+        @extend .container;
+    }
+    background-image: url('../img/care__background.png');
+    background-repeat: no-repeat;
+    &__content{
+        display: flex;
+        align-items: end;
+        column-gap: 18px;
+        &__resolution{
+            display: none;
+        }
+        &__left{
+            h2{
+            @include font-Merriweather-400-18;
+            color:rgba(255, 223, 158, 1);
+            }
+        }
+        &__image{
+            max-width: 891px;
+            width: 100%;
+        }
+        &__padding{
+        padding-top: 42px;
+        padding-bottom: 47.16px;
+            }
+
+        }
+        &__padding{
+            padding-bottom: 40px;
+        }
+    &__text{
+        background-color: rgba(57, 54, 47, 0.8);
+        border-radius: 5px;
+        padding: 22px 16px 27px 18px;
+        @include font-Roboto-300-14;
+        color:rgba(255, 223, 158, 1);
+    }
+    &__block{
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 5px;
+    }
+    &__button{
+        display: flex;
+        flex-direction: column;
+        row-gap: 18px;
+        & button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include font-Roboto-400-18;
+            max-width: 318px;
+            min-height: 64px;
+            background-color: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;   
+        }
+        & button:hover{
+            background-color: rgba(255, 239, 227, 0.83);
+            border: 2px solid #FF7E35;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            border-right: 15px solid #FF7E35;
+        }
+        &__padding{
+            padding-top: 42px;
+            padding-left: 20px;
+            padding-bottom: 42.26px;
+        }
+    }
+    &__sub-text{
+        display: flex;
+        flex-direction: column;
+        row-gap: 11px;
+        @include font-Roboto-300-14;
+        line-height: 17.6px;
+        letter-spacing: 0.06em;
+        & span span{
+            line-height: 16.41px;
+            letter-spacing: 0.06em;
+            max-width: 1000px;
+        }
+        &__padding{
+            padding-left: 20px;
+            padding-right: 21px;
+            padding-bottom: 42px;
+        }
+    }
+    &__nav{
+        display: none;
+    }
+    &__block__flex{
+        display: flex;
+    }
+    &__block__right__padding{
+        display: flex;
+        padding-top: 75px;
+        padding-left: 23px;
+    }
+    &__block__right{
+        display: none;
+    }
+    &__style{
+        @include font-Roboto-400-14;
+        li{
+            max-width: 681px;
+        }
+    }
+}

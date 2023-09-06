@@ -1,0 +1,46 @@
+.footer{
+    &__padding{
+        @include media ('551px'){
+            padding-top: 50px;
+        }
+    }
+    &__content{
+        @include media ('551px'){
+            flex-direction: column;
+            row-gap: 30px;
+            &__block__title{
+                display: flex;
+                flex-direction: row;
+                column-gap: 5px;
+             }
+             &__padding{
+                padding-bottom: 44.03px;
+             }
+         }
+    }
+    &__bottom{
+        &__padding{
+            @include media ('551px'){
+                padding-bottom: 30px;
+                padding-top: 30px;
+             } 
+        }
+    }
+    &__bottom__content{
+        @include media ('551px'){
+            flex-direction: column;
+         }
+         &__block__title{
+                display: flex;
+                flex-direction: row;
+                column-gap: 5px;
+             }
+         }
+
+    &__nav{
+        @include media ('551px'){
+            display: flex;
+            
+         }
+    }
+}

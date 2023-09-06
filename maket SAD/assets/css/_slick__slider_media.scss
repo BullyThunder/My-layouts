@@ -1,0 +1,28 @@
+.slick__slider{
+    @include media ('321px'){
+        
+        
+    }
+    &__block 
+    { 
+        @include media('426px'){
+            padding-left: 45px;
+    }
+        img
+        {
+        @include media('1100px'){
+            max-width: 218px;
+                }
+            }
+        }
+    &__block .slick-arrow .slick-prev{
+        @include media('1020px'){
+            left:2%;
+        }
+    }   
+    &__block .slick-arrow{
+        @include media('1020px'){
+            top:45%;
+        }
+    }
+}    

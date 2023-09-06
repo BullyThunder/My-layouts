@@ -1,0 +1,162 @@
+.header{
+    background-color: linear-gradient(0deg, #000000, #000000),
+    linear-gradient(0deg, rgba(37, 73, 31, 0.31), rgba(37, 73, 31, 0.31));
+    ;
+    &__container{
+        @extend .container;
+    }
+    background-image: url('../img/header_background.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    &__content{
+        display: flex;
+        flex-direction: row;
+        column-gap: 86px;
+        @include font-Roboto-500-14;
+        color:white;
+        &-margin{
+            padding-top: 16px;
+            padding-bottom: 19px;
+        }
+    }
+    &__flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__right_content{
+        display: flex;
+        flex-direction: column;
+       
+        row-gap: 4px;
+        @include font-Roboto-500-14;
+        color:#FFDF9E;
+        &-top{
+           display: flex;
+           
+           align-items: center;
+           column-gap: 8px;
+        }
+        &-bottom{
+            display: flex;
+            
+            align-items: center;
+           column-gap: 8px;
+        }
+        &-padding{
+            padding-top: 8px;
+        }
+    }
+    &__telefhone{
+        max-width: 8px;
+        max-height: 8.89px;
+        background: linear-gradient(0deg, #FFDF9E, #FFDF9E);
+    }
+    &__title{
+        max-width: 267px;
+        max-height: 204px;
+        
+    }
+    &__application{
+        display: flex;
+        justify-content: space-between;
+        
+        &-left-heading{
+            @include font-Merriweather-300-36;
+            color: white;
+            max-width: 438px;
+            padding-bottom: 47px;
+        }
+        &-left-title-padding{
+            padding-left: 43px;
+        }
+        &-left-button-span{
+            @include font-Roboto-500-24;
+           color:#FFDF9E;
+        }
+        &-left-button-padding{
+            padding-bottom: 100px;
+        }
+        &-left-button-text{
+            border-radius: 5px;
+           padding-top: 21px;
+           padding-bottom: 21px;
+           opacity: 0.53;
+           min-width: 340px;
+           min-height: 60.4px;
+           background-color: #FF7E35;
+           border:2px solid rgba(255, 126, 53, 1);
+        }
+        
+        &-right{
+            display: flex;
+            align-items: center;
+        &-image{
+            display: flex;
+            flex-direction: column;
+            row-gap: 23px;
+        }
+    }
+    }
+    &__location{
+        max-width: 12.18px;
+        max-height: 12.18px;
+    }
+    &_inst{
+        max-width: 28.14px;
+        max-height: 28.1px;
+    }
+    &_viber{
+        max-width: 26.66px;
+        max-height: 26.62px;
+    }
+    &_sms{
+        max-width: 28.14px;
+        max-height: 28.1px;
+    }
+    &_wrapper{
+        background-color: rgba(37, 73, 31, 0.31);
+    }
+    &__bottom{
+        &__image{
+            display: none;
+        }
+        display: flex;
+        justify-content: center;
+        background-color: rgba(33, 26, 21, 0.87);
+        position: relative;
+            top: 36px;
+        align-items: end;
+        column-gap: 120px;
+       &-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        row-gap: 5.25px;
+         @include font-Roboto-500-14;
+         color:rgba(255, 223, 158, 1);
+       }
+    }
+    &__bottom-first{
+        max-width: 45px;
+        max-height: 57.75px;
+        position: relative;
+    top: 5px;
+    }
+    &__bottom-second{
+        max-width: 41px;
+        max-height: 41px;
+        position: relative;
+        top:-5px;
+    }
+    &__bottom-third{
+        max-width: 80px;
+        max-height: 80px;
+        position: relative;
+    top: 5px;
+    }
+    &__burger-menu{
+        display: none;
+        
+    }
+}
